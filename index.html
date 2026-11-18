@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#123c2e">
+<title>HipoBuy spreadsheet | Product Catalog & Buying Checklist</title>
+<meta name="description" content="Explore HipoBuy spreadsheet finds from HipobuyFind. Search an imported product selection, compare reference prices and plan sizes, QC checks and shipping costs.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HipoBuy spreadsheet | Find, Compare, Check">
+<meta property="og:description" content="A focused product directory with reference prices, a practical buying checklist and a delivered-cost worksheet.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--bg:#f5f5ef;--ink:#152e24;--muted:#58685f;--green:#123c2e;--lime:#d8f28c;--line:#dce2d6;--white:#fff;--radius:20px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}button,input,select{font:inherit}button,a,input,select{touch-action:manipulation}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #81ad36;outline-offset:4px}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.skip{position:absolute;top:-100px;background:white;padding:12px;z-index:10}.skip:focus{top:10px}header{border-bottom:1px solid var(--line)}.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:19px;font-weight:850;text-decoration:none;letter-spacing:-.6px}.mark{display:inline-grid;place-items:center;background:var(--green);color:var(--lime);width:34px;height:34px;border-radius:11px;margin-right:10px}.navlinks{display:flex;gap:24px;font-size:14px}.navlinks a{text-decoration:none}.hero{padding:76px 0 66px;text-align:center}.eyebrow{font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#527244}.hero h1{font-size:clamp(42px,7vw,78px);line-height:1.07;letter-spacing:-3px;max-width:900px;margin:22px auto}.hero h1 span{color:#507342}.intro{max-width:680px;margin:22px auto;color:var(--muted);font-size:19px}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:14px 23px;border-radius:999px;font-weight:750;text-decoration:none;border:1px solid var(--green);background:var(--green);color:white;cursor:pointer}.btn.secondary{background:transparent;color:var(--green)}.destination{font-size:12px;color:var(--muted);margin:15px 0}.features{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-top:34px;font-size:13px}.features span:before{content:"✓";color:#547a31;margin-right:7px}.section{padding:48px 0}.sectionhead{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:24px}h2{font-size:clamp(26px,4vw,38px);letter-spacing:-1px;line-height:1.2;margin:10px 0 14px}h3{line-height:1.35}p{margin:12px 0}.muted{color:var(--muted)}.stamp{font-size:12px;padding:8px 12px;border:1px solid var(--line);border-radius:30px;white-space:nowrap}.tools{display:grid;grid-template-columns:1fr 190px 190px;gap:12px;margin:22px 0 12px}input,select{width:100%;padding:13px 14px;background:white;border:1px solid #bdcabb;border-radius:10px;color:var(--ink)}label{display:block;font-size:12px;font-weight:700}label input,label select{margin-top:6px}.result{font-size:13px;color:var(--muted);min-height:24px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.product{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:transform .2s,border-color .2s}.product:hover{transform:translateY(-3px);border-color:#89a574}.product[hidden]{display:none}.category{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#64804d;font-weight:800}.product h3{font-size:19px;letter-spacing:-.4px;margin:14px 0;min-height:52px}.price{font-size:27px;font-weight:800;letter-spacing:-1px}.price small{font-size:13px;color:var(--muted);font-weight:500;letter-spacing:0}.meta{font-size:12px;color:var(--muted);margin-bottom:22px}.product a{margin-top:auto;text-decoration:none;border-top:1px solid var(--line);padding-top:15px;font-size:14px;font-weight:750}.notice{font-size:13px;color:var(--muted);padding:16px 0}.live{border:1px solid var(--line);background:white;border-radius:var(--radius);overflow:hidden;margin-top:24px}.live summary{cursor:pointer;padding:20px;font-weight:750}.live iframe{width:100%;height:680px;border:0;border-top:1px solid var(--line);display:block}.live p{padding:0 20px 16px;font-size:13px;color:var(--muted)}.dark{background:var(--green);color:white;border-radius:28px;padding:36px;margin:20px 0}.dark .muted{color:#ccdacd}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:28px}.stepnum{display:grid;place-items:center;width:37px;height:37px;border:1px solid #72917a;border-radius:50%;color:var(--lime);font-size:14px}.steps h3{font-size:19px}.steps p{font-size:14px;color:#d3ded3}.split{display:grid;grid-template-columns:1fr 1fr;gap:24px}.panel{padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:white}.checklist{padding-left:20px}.checklist li{margin:12px 0}.costinputs{display:grid;grid-template-columns:1fr 1fr;gap:12px}.total{display:flex;justify-content:space-between;align-items:center;background:#edf3e3;padding:16px;border-radius:12px;margin-top:20px}.total output{font-size:27px;font-weight:800}.small{font-size:13px;color:var(--muted)}.faq{max-width:850px;margin:auto}.faq>h2,.faq>.eyebrow{text-align:center}.faq details{border-bottom:1px solid var(--line);padding:20px 0}.faq summary{font-weight:750;cursor:pointer;padding-right:18px}.faq details p{color:var(--muted);font-size:15px}.bottom{text-align:center;padding:46px 22px;background:#e9efdf;border-radius:24px;margin:30px 0 60px}footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:12px;color:var(--muted)}footer p{max-width:900px}.empty{padding:30px;background:white;border-radius:12px}
+@media(max-width:760px){.wrap{width:min(100% - 28px,1120px)}.nav{min-height:72px}.navlinks{gap:14px;font-size:12px}.navlinks a:last-child{display:none}.brand{font-size:15px}.mark{margin-right:6px}.hero{padding:50px 0 35px}.hero h1{letter-spacing:-2px}.intro{font-size:17px}.section{padding:32px 0}.sectionhead{display:block}.stamp{display:inline-block}.tools{grid-template-columns:1fr 1fr}.tools>label:first-child{grid-column:1/-1}.grid{grid-template-columns:repeat(2,1fr)}.product{padding:18px}.product h3{font-size:17px}.split,.steps{grid-template-columns:1fr}.dark{padding:25px}.steps{gap:16px}.panel{padding:22px}.live iframe{height:560px}}
+@media(max-width:430px){.grid{grid-template-columns:1fr}.product h3{min-height:0}.navlinks{gap:10px}.features{gap:10px;font-size:12px}.costinputs{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"HipoBuy spreadsheet | Product Catalog & Buying Checklist",
+  "description":"An independent product discovery page with an imported HipobuyFind selection, reference prices and shopping comparison tools.",
+  "inLanguage":"en",
+  "mainEntity":{
+    "@type":"ItemList",
+    "name":"Selected HipobuyFind catalog entries",
+    "numberOfItems":6,
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Black and Red Basketball Sneakers"},
+      {"@type":"ListItem","position":2,"name":"Cream Chunky Sneakers with Wide Laces"},
+      {"@type":"ListItem","position":3,"name":"Gray Hooded Hoodie"},
+      {"@type":"ListItem","position":4,"name":"Graphic Short-Sleeve T-Shirt"},
+      {"@type":"ListItem","position":5,"name":"Lightweight Puffer Jacket"},
+      {"@type":"ListItem","position":6,"name":"Multi-Pocket Flap Backpack Color Collection"}
+    ]
+  }
+}
+</script>
+<!--
+File: index.html
+Catalog source: https://www.hipobuyfind.com/
+Imported selection checked: 2026-11-19. Prices are a static reference, not live quotes.
+Research pages:
+https://www.ssfinds.com/hipobuy-spreadsheet
+https://repsheet.net/spreadsheet/hipobuy
+https://hipospreadsheets.com/
+Search results were researched; exact Google first-page positions were not independently verified.
+Implemented improvements: visible source/date, searchable static records, category and price
+controls, explicit destination labels, size/QC checklist, accessible cost worksheet and concise FAQ.
+Deployment requirement: add an absolute self-canonical using the final public URL.
+INDEXING STATUS: Not submitted. No deployment URL or verified webmaster account was provided.
+After deployment, verify ownership in Google Search Console and Bing Webmaster Tools,
+publish a sitemap containing the final canonical URL, submit it, and request URL indexing.
+This standalone HTML cannot verify ownership or guarantee search-engine inclusion.
+-->
+<link rel="canonical" href="https://kakobuyfinds.github.io/tuvyx/">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="https://hipobuyfind.com"><span class="mark" aria-hidden="true">H</span>HipoBuy spreadsheet</a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#catalog">Catalog</a>
+      <a href="#guide">Buying guide</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <section class="hero" aria-labelledby="title">
+    <div class="eyebrow">Find your next shortlist</div>
+    <h1 id="title">HipoBuy spreadsheet.<br><span>Browse with a clearer plan.</span></h1>
+    <p class="intro">Discover product ideas, compare reference prices and keep the important details together before choosing what to order.</p>
+    <div class="actions">
+      <a class="btn" href="https://hipobuyfind.com">HipoBuy spreadsheet <span aria-hidden="true">↗</span></a>
+      <a class="btn secondary" href="https://hipobuyfind.com">Buy it now <span aria-hidden="true">↗</span></a>
+    </div>
+    <p class="destination">Both buttons open hipobuyfind.com, a product discovery catalog.</p>
+    <div class="features">
+      <span>Browsable product selection</span>
+      <span>Clearly labeled reference prices</span>
+      <span>No spreadsheet download needed</span>
+    </div>
+  </section>
+
+  <section id="catalog" class="section" aria-labelledby="catalog-title">
+    <div class="sectionhead">
+      <div>
+        <div class="eyebrow">The product directory</div>
+        <h2 id="catalog-title">Explore the catalog.</h2>
+        <p class="muted">A small, real selection imported from HipobuyFind. Filter it here, then browse the source for more options.</p>
+      </div>
+      <span class="stamp">Snapshot: November 19, 2026</span>
+    </div>
+
+    <div class="tools">
+      <label>Search this selection
+        <input id="search" type="search" placeholder="Try sneakers, hoodie or backpack…" autocomplete="off">
+      </label>
+      <label>Category
+        <select id="category">
+          <option value="all">All categories</option>
+          <option value="Shoes">Shoes</option>
+          <option value="Hoodies">Hoodies</option>
+          <option value="T-Shirts">T-Shirts</option>
+          <option value="Jackets">Jackets</option>
+          <option value="Bags">Bags</option>
+        </select>
+      </label>
+      <label>Sort selection
+        <select id="sort">
+          <option value="default">Original order</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+        </select>
+      </label>
+    </div>
+    <p id="result" class="result" role="status" aria-live="polite">6 products in this imported selection</p>
+
+    <div class="grid" id="products">
+      <article class="product" data-category="Shoes" data-price="20.14" data-index="0">
+        <span class="category">Shoes</span>
+        <h3>Black and Red Basketball Sneakers</h3>
+        <div class="price">$20.14 <small>≈ ¥145.00</small></div>
+        <p class="meta">Source item 148261 · Reference item price</p>
+        <a href="https://hipobuyfind.com" aria-label="Browse HipobuyFind for Black and Red Basketball Sneakers">Browse source catalog ↗</a>
+      </article>
+      <article class="product" data-category="Shoes" data-price="48.61" data-index="1">
+        <span class="category">Shoes</span>
+        <h3>Cream Chunky Sneakers with Wide Laces</h3>
+        <div class="price">$48.61 <small>≈ ¥350.00</small></div>
+        <p class="meta">Source item 148191 · Reference item price</p>
+        <a href="https://hipobuyfind.com" aria-label="Browse HipobuyFind for Cream Chunky Sneakers">Browse source catalog ↗</a>
+      </article>
+      <article class="product" data-category="Hoodies" data-price="41.67" data-index="2">
+        <span class="category">Hoodies</span>
+        <h3>Gray Hooded Hoodie</h3>
+        <div class="price">$41.67 <small>≈ ¥300.00</small></div>
+        <p class="meta">Source item 154936 · Reference item price</p>
+        <a href="https://hipobuyfind.com" aria-label="Browse HipobuyFind for Gray Hooded Hoodie">Browse source catalog ↗</a>
+      </article>
+      <article class="product" data-category="T-Shirts" data-price="14.58" data-index="3">
+        <span class="category">T-Shirts</span>
+        <h3>Graphic Short-Sleeve T-Shirt</h3>
+        <div class="price">$14.58 <small>≈ ¥105.00</small></div>
+        <p class="meta">Source item 154920 · Reference item price</p>
+        <a href="https://hipobuyfind.com" aria-label="Browse HipobuyFind for Graphic Short-Sleeve T-Shirt">Browse source catalog ↗</a>
+      </article>
+      <article class="product" data-category="Jackets" data-price="37.22" data-index="4">
+        <span class="category">Jackets</span>
+        <h3>Lightweight Puffer Jacket</h3>
+        <div class="price">$37.22 <small>≈ ¥268.00</small></div>
+        <p class="meta">Source item 152572 · Reference item price</p>
+        <a href="https://hipobuyfind.com" aria-label="Browse HipobuyFind for Lightweight Puffer Jacket">Browse source catalog ↗</a>
+      </article>
+      <article class="product" data-category="Bags" data-price="41.67" data-index="5">
+        <span class="category">Bags</span>
+        <h3>Multi-Pocket Flap Backpack Color Collection</h3>
+        <div class="price">$41.67 <small>≈ ¥300.00</small></div>
+        <p class="meta">Source item 154846 · Reference item price</p>
+        <a href="https://hipobuyfind.com" aria-label="Browse HipobuyFind for Multi-Pocket Flap Backpack">Browse source catalog ↗</a>
+      </article>
+    </div>
+    <p id="empty" class="empty" hidden>No matching entries in this six-item selection. Try another term or open the full catalog.</p>
+    <p class="notice">Source: hipobuyfind.com. Titles are shortened for readability. Prices reflect the retrieved catalog and exclude delivery and other charges. Cards open the source homepage; search there using the title or item number. Stock, sizing and HipoBuy compatibility have not been independently verified.</p>
+
+    <details class="live" id="live-catalog">
+      <summary>Expand the full HipobuyFind catalog</summary>
+      <iframe id="catalog-frame" data-src="https://hipobuyfind.com" title="Full product catalog from HipobuyFind" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      <p>The external site controls its content and may restrict embedding. If the catalog does not appear, <a href="https://hipobuyfind.com">open HipobuyFind directly</a>.</p>
+    </details>
+  </section>
+
+  <section id="guide" class="section" aria-labelledby="guide-title">
+    <div class="dark">
+      <div class="eyebrow" style="color:var(--lime)">From discovery to decision</div>
+      <h2 id="guide-title">How to use a HipoBuy spreadsheet</h2>
+      <p class="muted">Use a directory to narrow your choices, then make the purchase decision using the exact seller listing and your chosen service’s current terms.</p>
+      <div class="steps">
+        <article>
+          <div class="stepnum">01</div>
+          <h3>Define the item</h3>
+          <p>Choose a category and intended use. Write down your preferred fit, color and budget so similar-looking products are easier to compare.</p>
+        </article>
+        <article>
+          <div class="stepnum">02</div>
+          <h3>Identify the exact option</h3>
+          <p>Keep the source URL, item identifier, size and color together. A listing with multiple options may show a starting price for a different variant.</p>
+        </article>
+        <article>
+          <div class="stepnum">03</div>
+          <h3>Resolve the unknowns</h3>
+          <p>Confirm measurements, purchase support, inspection options and the delivery quote. Leave uncertain details marked as unknown until you receive an answer.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section split" aria-label="Product checks and budget planning">
+    <article class="panel">
+      <div class="eyebrow">A useful comparison record</div>
+      <h2>Check more than the thumbnail.</h2>
+      <ul class="checklist">
+        <li><strong>Fit:</strong> Compare the listing’s measurements with an item you already wear comfortably.</li>
+        <li><strong>Variant:</strong> Match the selected color, size and package to the price you record.</li>
+        <li><strong>Evidence:</strong> Ask for specifications or measurements where photographs leave a question unanswered.</li>
+        <li><strong>QC:</strong> If inspection is available, clarify the photos included, extra charges and the deadline for reporting problems.</li>
+        <li><strong>Terms:</strong> Read the purchasing service’s restrictions and return conditions before payment.</li>
+      </ul>
+      <p class="small">Photographs show visible appearance. They do not establish authenticity, precise composition or long-term performance.</p>
+    </article>
+
+    <article class="panel">
+      <div class="eyebrow">Plan the whole purchase</div>
+      <h2>Delivered-cost worksheet</h2>
+      <p class="small">Enter your own estimates in USD. Start from a current quote; these fields do not retrieve fees or shipping rates.</p>
+      <div class="costinputs">
+        <label>Items, USD<input class="cost" id="items" type="number" min="0" step="0.01" value="0" inputmode="decimal"></label>
+        <label>Domestic delivery, USD<input class="cost" id="domestic" type="number" min="0" step="0.01" value="0" inputmode="decimal"></label>
+        <label>Service fees, USD<input class="cost" id="fees" type="number" min="0" step="0.01" value="0" inputmode="decimal"></label>
+        <label>International shipping, USD<input class="cost" id="shipping" type="number" min="0" step="0.01" value="0" inputmode="decimal"></label>
+        <label>Taxes and other charges, USD<input class="cost" id="tax" type="number" min="0" step="0.01" value="0" inputmode="decimal"></label>
+      </div>
+      <div class="total"><span>Estimated total</span><output id="total" for="items domestic fees shipping tax" aria-live="polite">$0.00</output></div>
+      <p class="small">A zero means no amount entered. Add every applicable charge before treating this as a budget estimate. Values stay in this page and are not submitted.</p>
+    </article>
+  </section>
+
+  <section id="faq" class="section faq" aria-labelledby="faq-title">
+    <div class="eyebrow">Before you browse</div>
+    <h2 id="faq-title">HipoBuy spreadsheet questions</h2>
+    <details>
+      <summary>What is this HipoBuy spreadsheet website?</summary>
+      <p>It is an independent discovery page combining a small imported HipobuyFind catalog selection with tools for comparing products and planning a budget. It is not an official HipoBuy service.</p>
+    </details>
+    <details>
+      <summary>Where do the HipoBuy spreadsheet and Buy it now buttons go?</summary>
+      <p>Both open https://hipobuyfind.com. “Buy it now” is a navigation button to that catalog, not an on-page checkout or a payment instruction.</p>
+    </details>
+    <details>
+      <summary>Is the entire catalog imported into this page?</summary>
+      <p>Six source entries are included directly in the HTML so they remain readable without JavaScript. The expandable catalog displays the external website when that website permits embedding. Search and sorting here apply only to the six imported entries.</p>
+    </details>
+    <details>
+      <summary>Are these live prices or confirmed stock?</summary>
+      <p>No. The displayed amounts are reference prices from the dated snapshot. Recheck the exact variant, current price and availability at the source before making a purchase decision.</p>
+    </details>
+    <details>
+      <summary>Can I order every listed item through HipoBuy?</summary>
+      <p>This page does not test purchasing compatibility. Obtain the original marketplace listing and confirm that your chosen purchasing service accepts that listing and product for your destination.</p>
+    </details>
+    <details>
+      <summary>Are QC photos included for every product?</summary>
+      <p>No QC collection is hosted here. Ask the seller or service whether photos are available for your exact item and what the inspection covers.</p>
+    </details>
+    <details>
+      <summary>Can I use the page without downloading a spreadsheet?</summary>
+      <p>Yes. Browse in your browser and keep your own comparison notes if needed. A useful record includes the source link, selected option, measurements, quoted charges and the date you checked them.</p>
+    </details>
+  </section>
+
+  <section class="bottom" aria-labelledby="next-title">
+    <div class="eyebrow">One informed choice at a time</div>
+    <h2 id="next-title">Find an item. Check the details.</h2>
+    <p class="muted">Continue to HipobuyFind to explore the wider product directory.</p>
+    <div class="actions">
+      <a class="btn" href="https://hipobuyfind.com">HipoBuy spreadsheet ↗</a>
+      <a class="btn secondary" href="https://hipobuyfind.com">Buy it now ↗</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>HipoBuy spreadsheet · Independent product discovery</strong>
+    <p>This page does not take payment or handle orders, delivery or refunds. It is not affiliated with HipoBuy or any mentioned brand. Product records originate from HipobuyFind; their inclusion is not a certification or endorsement. Confirm transaction details with the seller or purchasing service you select.</p>
+    <p>Catalog snapshot: November 19, 2026 · Reference currency: USD and CNY.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  const search=document.getElementById("search");
+  const category=document.getElementById("category");
+  const sort=document.getElementById("sort");
+  const container=document.getElementById("products");
+  const cards=Array.from(container.querySelectorAll(".product"));
+  function updateCatalog(){
+    const query=search.value.trim().toLocaleLowerCase();
+    let count=0;
+    cards.forEach(function(card){
+      const matchesText=card.textContent.toLocaleLowerCase().includes(query);
+      const matchesCategory=category.value==="all"||card.dataset.category===category.value;
+      card.hidden=!(matchesText&&matchesCategory);
+      if(!card.hidden)count++;
+    });
+    const ordered=cards.slice().sort(function(a,b){
+      if(sort.value==="low")return Number(a.dataset.price)-Number(b.dataset.price);
+      if(sort.value==="high")return Number(b.dataset.price)-Number(a.dataset.price);
+      return Number(a.dataset.index)-Number(b.dataset.index);
+    });
+    ordered.forEach(function(card){container.appendChild(card);});
+    document.getElementById("result").textContent=count+" of "+cards.length+" imported products shown";
+    document.getElementById("empty").hidden=count!==0;
+  }
+  search.addEventListener("input",updateCatalog);
+  category.addEventListener("change",updateCatalog);
+  sort.addEventListener("change",updateCatalog);
+
+  const costs=Array.from(document.querySelectorAll(".cost"));
+  const money=new Intl.NumberFormat("en-US",{style:"currency",currency:"USD"});
+  function updateTotal(){
+    const total=costs.reduce(function(sum,input){
+      const value=input.valueAsNumber;
+      return sum+(Number.isFinite(value)&&value>=0?value:0);
+    },0);
+    document.getElementById("total").value=money.format(total);
+  }
+  costs.forEach(function(input){input.addEventListener("input",updateTotal);});
+  updateTotal();
+
+  document.getElementById("live-catalog").addEventListener("toggle",function(){
+    const frame=document.getElementById("catalog-frame");
+    if(this.open&&!frame.getAttribute("src")){
+      frame.setAttribute("src",frame.dataset.src);
+    }
+  });
+})();
+</script>
+</body>
+</html>
